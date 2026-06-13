@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body { 
+    font-family: "Montserrat", sans-serif;
+    color:#515076;
+    font-size: 13px;
+    width: 1280px;
+    height: 1715px;
+    margin: 0 auto;
+}
+.product-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 45px;
+    
+}
+
+.product-card{
+    background-color: #f5f5f5;
+    padding: 25px;
+    max-width: 340px;
+}
+
+.product-card img{
+    width: 100%;
+}
+
+.main-title{
+    text-align: center;
+    margin: 220px 217px;
+    margin-bottom: 100px;
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.skin-type {
+    font-size: 12px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+.card-description {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    margin: 0;
+}
+
+.card-compound {
+    padding: 5px 0;
+    margin: 0;
+}
+
+.product-ingredients{
+    margin: 0;
+    padding: 5px;
+}
+
+.product-ingredients li {
+    margin-bottom: 5px;
+}
+
+.product-ingredients li:last-child {
+    margin-bottom: 0;
+}
+.price-wrapper {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+}
+
+
+}
