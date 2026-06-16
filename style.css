@@ -38,8 +38,13 @@ body {
     font-size: 12px;
     padding-top: 30px;
     padding-bottom: 5px;
+    margin: 0;
 }
 
+h2{
+    margin: 0;
+    
+}
 .card-description {
     padding-top: 5px;
     padding-bottom: 15px;
@@ -52,8 +57,9 @@ body {
 }
 
 .product-ingredients{
+    list-style-type: circle;
     margin: 0;
-    padding: 5px;
+    padding-left: 15px ;
 }
 
 .product-ingredients li {
