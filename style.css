@@ -38,6 +38,7 @@ body {
   font-size: 12px;
   padding-top: 30px;
   padding-bottom: 10px;
+  text-transform: uppercase;
   margin: 0;
 }
 
@@ -68,6 +69,7 @@ h2 {
 .product-ingredients li:last-child {
   margin-bottom: 0;
 }
+
 .price-wrapper {
   font-size: 20px;
   display: flex;
@@ -75,3 +77,4 @@ h2 {
   align-items: center;
   padding-top: 25px;
 }
+
