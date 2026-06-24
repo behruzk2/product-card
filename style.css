@@ -13,7 +13,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 45px;
-  background-image: url(images/background_flowers.jpg);
+  background-image: url("images/background_flowers.jpg");
   background-size: 790px 697px;
   background-repeat: no-repeat;
   background-position: 21px 0;
