@@ -1,0 +1,28 @@
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url("/images/background_flowers.jpg");
+  background-size: 790px 697px;
+  background-repeat: no-repeat;
+  background-position: 21px 0;
+  padding-top: 220px;
+  padding-bottom: 121px;
+}
+
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 45px;
+  width: 100%;
+}
+
+
+.products__title {
+  text-align: center;
+  margin: 0 132px 100px 132px;
+  font-size: 70px;
+  font-weight: 400;
+  width: 100%;
+}
