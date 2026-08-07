@@ -38,10 +38,10 @@ function outPutConsoleLog(message) {
 }
 
 // ПУНКТ 6: Вывожу заголовок в консоль при наведении
-const head = document.querySelector('.products__title');
+const title = document.querySelector('.products__title');
 
-head.addEventListener('mouseenter', () => {
-    console.log(head.textContent);
+title.addEventListener('mouseenter', () => {
+    console.log(title.textContent);
 });
 
 // Пункт 7: Кнопка с переключением цвета через classList.toggle
