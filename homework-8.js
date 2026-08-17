@@ -34,7 +34,7 @@ const addMaxSpeed = (carDetails) => {
 
 // Пункт 6.Написал функцию, которое выводит значение свойство объекта
 
-const ShowObjectKey = (obj, key) => {
+const showObjectKey = (obj, key) => {
   console.log(obj[key]);
 };
 
