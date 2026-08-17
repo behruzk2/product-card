@@ -35,33 +35,81 @@ const addMaxSpeed = (carDetails) => {
 // Пункт 6.Написал функцию, которое выводит значение свойство объекта
 
 const getObjectKey = (Obj, key) => {
-  return Obj[key];
+  console.log(Obj[key]);
 };
 
 //Пункт 7. Создал массив, который содержит названия продуктов
 
 const productsName = ["Apple", "Strawberry", "Banana", "Blueberry", "Mango"];
 
-//Пункт 8. Создал массив из объектов книг и отдельной строкой добавил еще один объект книгу 
+//Пункт 8. Создал массив из объектов книг и отдельной строкой добавил еще один объект книгу
 
 const books = [
-  { title: "Harry Potter", author: "J.K. Rowling", year: 1997, coverColor: "#FF0000", genre: "Fantasy" },
-  { title: "The Hunger Games", author: "Suzanne Collins", year: 2008, coverColor: "#0f0f0f", genre: "Dystopian Fiction" },
-  { title: "The Lord of the Rings", author: "J.R.R. Tolkien", year: 1954, coverColor: "#0f0f0f", genre: "Fantasy" },
-  { title: "Dune", author: "Frank Herbert", year: 1965, coverColor: "#FFA500", genre: "Science Fiction" },
+  {
+    title: "Harry Potter",
+    author: "J.K. Rowling",
+    year: 1997,
+    coverColor: "#FF0000",
+    genre: "Fantasy",
+  },
+  {
+    title: "The Hunger Games",
+    author: "Suzanne Collins",
+    year: 2008,
+    coverColor: "#0f0f0f",
+    genre: "Dystopian Fiction",
+  },
+  {
+    title: "The Lord of the Rings",
+    author: "J.R.R. Tolkien",
+    year: 1954,
+    coverColor: "#0f0f0f",
+    genre: "Fantasy",
+  },
+  {
+    title: "Dune",
+    author: "Frank Herbert",
+    year: 1965,
+    coverColor: "#FFA500",
+    genre: "Science Fiction",
+  },
 ];
 
-books.push({ title: "Fight Club", author: "Chuck Palahniuk", year: 1996, coverColor: "#0f0f0f", genre: "Psychological Fiction" });
+books.push({
+  title: "Fight Club",
+  author: "Chuck Palahniuk",
+  year: 1996,
+  coverColor: "#0f0f0f",
+  genre: "Psychological Fiction",
+});
 
 // Пункт 9. Создал еще один массив, из объектов книг, с определенной вселенной и объеденил с массивом из пункта 8
 
 const harryPotterBooks = [
-  { title: "Harry Potter and the Chamber of Secrets", author: "J.K. Rowling", year: 1998, coverColor: "#006400", genre: "Fantasy" },
-  { title: "Harry Potter and the Prisoner of Azkaban", author: "J.K. Rowling", year: 1999, coverColor: "#1E90FF", genre: "Fantasy" },
-  { title: "Harry Potter and the Goblet of Fire", author: "J.K. Rowling", year: 2000, coverColor: "#FFD700", genre: "Fantasy" }
+  {
+    title: "Harry Potter and the Chamber of Secrets",
+    author: "J.K. Rowling",
+    year: 1998,
+    coverColor: "#006400",
+    genre: "Fantasy",
+  },
+  {
+    title: "Harry Potter and the Prisoner of Azkaban",
+    author: "J.K. Rowling",
+    year: 1999,
+    coverColor: "#1E90FF",
+    genre: "Fantasy",
+  },
+  {
+    title: "Harry Potter and the Goblet of Fire",
+    author: "J.K. Rowling",
+    year: 2000,
+    coverColor: "#FFD700",
+    genre: "Fantasy",
+  },
 ];
 
-const allBooks = [...books,...harryPotterBooks];
+const allBooks = [...books, ...harryPotterBooks];
 
 // Пункт 10. Написал функцию,которая добавляет в массив из пункта 9 новое свойство "isRare" и его значение в каждый объект
 
