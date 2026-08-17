@@ -34,8 +34,8 @@ const addMaxSpeed = (carDetails) => {
 
 // Пункт 6.Написал функцию, которое выводит значение свойство объекта
 
-const getObjectKey = (Obj, key) => {
-  console.log(Obj[key]);
+const ShowObjectKey = (obj, key) => {
+  console.log(obj[key]);
 };
 
 //Пункт 7. Создал массив, который содержит названия продуктов
@@ -113,7 +113,7 @@ const allBooks = [...books, ...harryPotterBooks];
 
 // Пункт 10. Написал функцию,которая добавляет в массив из пункта 9 новое свойство "isRare" и его значение в каждый объект
 
-const updatedBooks = allBooks.map((book) => {
+const booksWithRarity = allBooks.map((book) => {
   if (book.year > 2000) {
     book.isRare = true;
   } else {
