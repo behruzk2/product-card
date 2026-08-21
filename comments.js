@@ -1,4 +1,4 @@
-///LVL 2. Point 5 & 6
+///LVL 2. Point 5 & 6. Create comments.js with export
 
 export const comments = [
   {
