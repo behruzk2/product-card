@@ -22,8 +22,8 @@ const reverseArray = (arr) => {
   return arr.reverse();
 };
 
-ReverseArray(companionsProphetMuhammad);
-ReverseArray(numbersFromFive);
+reverseArray(companionsProphetMuhammad);
+reverseArray(numbersFromFive);
 
 ///LVL 2. Point 6 & 7.
 
