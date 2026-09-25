@@ -11,7 +11,7 @@
 
 <body>
   <div class="products">
-    <h1 class="products__title">
+    <h1 class="products__title" id="store">
       Выбери свой продукт
     </h1>
 
@@ -38,6 +38,50 @@
       </article>
     </template>
   </div>
+
+  <footer class="footer" id="contacts">
+    <div class="footer__container">
+      <div class="footer__columns">
+        <div class="footer__column footer__column_left">
+          <h2 class="footer__title">Product Cards</h2><!-- /.footer__title -->
+          <p class="footer__text">У нас самые лучшие продукты для кожи!</p><!-- /.footer__text -->
+          <div class="footer__socials">
+            <a href="#" class="footer__social-link">
+              <img src="/images/telegram_icon.svg" alt="Telegram" class="footer__social-icon">
+            </a>
+            <a href="#" class="footer__social-link">
+              <img src="/images/vk_icon.svg" alt="VK" class="footer__social-icon">
+            </a>
+          </div>
+        </div><!-- /.footer__column footer__column_left -->
+        <div class="footer__column footer__column_centre">
+          <p class="footer__form-title">Подпишись на наши акции:</p><!-- /.footer__form-title -->
+          <form action="#" class="footer__form">
+            <input type="email" name="email" class="footer__form-input" placeholder="Введи Email...">
+            <button type="submit" class="footer__form-button"> <span class="footer__form-divider"></span>
+              Подписаться</button>
+          </form><!-- /.footer__form -->
+        </div><!-- /.footer__column footer__column_centre -->
+        <div class="footer__column footer__column_right">
+          <p class="footer__links-title">
+            Быстрые ссылки
+          </p><!-- /.footer__links-title -->
+          <nav class="links">
+            <ul class="links__list">
+              <li class="links__item"><a href="#">Главная</a></li><!-- /.links__item -->
+              <li class="links__item"><a href="#store">Магазин</a></li><!-- /.links__item -->
+              <li class="links__item"><a href="#contacts">Контакты</a></li><!-- /.links__item -->
+            </ul><!-- /.links__list-->
+
+          </nav><!-- /.links -->
+        </div><!-- /.footer__column footer__column_right -->
+      </div><!-- /.footer__columns -->
+
+      <p class="footer__copyright">www.product-cards.com©all right reserve</p><!-- /.footer__copyright -->
+    </div><!-- /.footer__container -->
+
+  </footer><!-- /.footer -->
+
 
   <script src="main.js"></script>
   <script src="homework-7.js"></script>
