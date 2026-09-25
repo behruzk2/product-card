@@ -123,7 +123,8 @@ body {
 
 .footer {
   background: #3a3a3a;
-  width: 100%;
+  width: 1728px;
+  margin: 0 auto;
   color: #f5f5f5;
   font-size: 18px;
   line-height: 1.25;
@@ -139,10 +140,10 @@ body {
 }
 
 .footer__columns {
-  display: grid;
-  grid-template-columns: 409px 477px minmax(178px, 1fr);
-  column-gap: 132px;
-  align-items: start;
+  display: flex;
+  justify-content: space-between;
+  gap: 132px;
+  align-items: flex-start;
 }
 
 .footer__column {
@@ -150,7 +151,12 @@ body {
 }
 
 .footer__column_left {
+  width: 409px;
   padding-top: 5px;
+}
+
+.footer__column_centre {
+  width: 477px;
 }
 
 .footer__title {
@@ -211,7 +217,6 @@ body {
 }
 
 .footer__form-button {
-  flex-shrink: 0;
   cursor: pointer;
   padding: 0 15px 0 21px;
   border-left: 1px solid #3a3a3a;
@@ -219,14 +224,9 @@ body {
   line-height: 18px;
 }
 
-.footer :focus-visible {
-  outline: 2px solid #4a90d9;
-  outline-offset: 4px;
-}
-
 .footer__column_right {
-  justify-self: end;
   width: 178px;
+  margin-left: auto;
 }
 
 .footer__links-title {
@@ -259,9 +259,9 @@ body {
 .footer__copyright {
   text-align: center;
   padding-top: 33px;
-  margin: auto 0 0;
+  margin: auto 0 0px;
   position: relative;
-  overflow-wrap: anywhere;
+
 }
 
 .footer__copyright::before {
@@ -273,55 +273,4 @@ body {
   width: 66px;
   height: 1px;
   background-color: #fff;
-}
-
-@media (max-width: 1500px) {
-  .footer__container {
-    padding-right: 51px;
-  }
-
-  .footer__columns {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 477px) 178px;
-    gap: 40px;
-  }
-
-  .footer__form-title {
-    padding-right: 0;
-    text-align: center;
-  }
-}
-
-@media (max-width: 1100px) {
-  .footer__container {
-    padding: 40px 24px;
-  }
-
-  .footer__columns {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 36px;
-  }
-
-  .footer__column_centre {
-    width: 100%;
-    max-width: 477px;
-  }
-
-  .footer__column_right {
-    justify-self: start;
-  }
-
-  .footer__copyright {
-    margin-top: 60px;
-  }
-}
-
-@media (max-width: 400px) {
-  .footer__form-input {
-    padding-left: 12px;
-  }
-
-  .footer__form-button {
-    padding: 0 10px;
-    font-size: 14px;
-  }
 }
