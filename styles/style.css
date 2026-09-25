@@ -123,25 +123,39 @@ body {
 
 .footer {
   background: #3a3a3a;
-  width: 1728px;
-  margin: 0 auto;
+  width: 100%;
   color: #f5f5f5;
   font-size: 18px;
-  margin: auto
+  line-height: 1.25;
+}
+
+.footer__container {
+  max-width: 1728px;
+  min-height: 477px;
+  margin: 0 auto;
+  padding: 53px 107px 60px 51px;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__columns {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 409px 477px minmax(178px, 1fr);
+  column-gap: 132px;
+  align-items: start;
 }
-.footer__column.footer__column_left {
-  width: 409px;
-  margin: 53px 132px 197px 84px;
+
+.footer__column {
+  min-width: 0;
+}
+
+.footer__column_left {
+  padding-top: 5px;
 }
 
 .footer__title {
   font-size: 28px;
+  font-weight: 700;
   margin: 0 0 16px;
 }
 
@@ -149,71 +163,77 @@ body {
   margin: 0 0 44px;
 }
 
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 30.5px;
+}
+
 .footer__social-link {
+  display: inline-flex;
   text-decoration: none;
 }
 
 .footer__social-icon {
-  width: 24px;
-  height: 14px;
-  margin-right: 30.5px;
-}
-
-.footer__column.footer__column_centre {
-  width: 477px;
-  margin: 53px 373px 239px 0;
+  display: block;
 }
 
 .footer__form-title {
+  display: block;
   font-size: 24px;
-  margin: 0 39px 13px 88px; 
+  margin: 0 0 13px;
+  text-align: right;
+  padding-right: 39px;
 }
 
 .footer__form {
-  background-color: #f5f5f5;
+  background-color: #fff;
   border-radius: 10px;
   display: flex;
   align-items: center;
-  height: 61px;
+  min-height: 61px;
+}
+
+.footer__form-input,
+.footer__form-button {
+  font-family: inherit;
+  color: #3a3a3a;
+  border: none;
+  background: transparent;
 }
 
 .footer__form-input {
-  border: none;
-  background: transparent;
-  outline: non;
+  min-width: 0;
+  width: 100%;
   flex: 1;
-  padding-left: 36px;
+  padding: 20px 12px 20px 36px;
+  font-size: 14px;
 }
 
 .footer__form-button {
-  border: none;
-  background: transparent;
-  cursor:pointer;
-  padding: 20px 15px 19px 21px;
-  display: flex;
-  align-items: center;
+  flex-shrink: 0;
+  cursor: pointer;
+  padding: 0 15px 0 21px;
+  border-left: 1px solid #3a3a3a;
   font-size: 18px;
+  line-height: 18px;
 }
 
-.footer__form-divider {
-  width: 1px;
-  height: 18px;
-  background-color: #3a3a3a;
-  margin-right: 15px;
+.footer :focus-visible {
+  outline: 2px solid #4a90d9;
+  outline-offset: 4px;
 }
 
-.footer__column.footer__column_right{
+.footer__column_right {
+  justify-self: end;
   width: 178px;
-  margin: 53px 107px 195px 0;
-  padding: 0;
 }
 
-.footer__links-title{
-  margin: 0 0 23px 0;
-
+.footer__links-title {
+  margin: 0 0 23px;
 }
 
-.links__list{
+.links__list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -224,11 +244,11 @@ body {
   text-decoration: none;
 }
 
-.links a:hover{
-  text-decoration: underline
+.links a:hover {
+  text-decoration: underline;
 }
 
-.links__item{
+.links__item {
   margin-bottom: 17px;
 }
 
@@ -236,14 +256,12 @@ body {
   margin-bottom: 0;
 }
 
-.footer__copyright{
-  display: flex;
-  justify-content: center;
-  padding-bottom: 60px;
+.footer__copyright {
+  text-align: center;
   padding-top: 33px;
-  margin: 0;
-  margin-bottom: 10px;
+  margin: auto 0 0;
   position: relative;
+  overflow-wrap: anywhere;
 }
 
 .footer__copyright::before {
@@ -251,8 +269,59 @@ body {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(-50%); 
+  transform: translateX(-50%);
   width: 66px;
   height: 1px;
-  background-color: #ffffff;
+  background-color: #fff;
+}
+
+@media (max-width: 1500px) {
+  .footer__container {
+    padding-right: 51px;
+  }
+
+  .footer__columns {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 477px) 178px;
+    gap: 40px;
+  }
+
+  .footer__form-title {
+    padding-right: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1100px) {
+  .footer__container {
+    padding: 40px 24px;
+  }
+
+  .footer__columns {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 36px;
+  }
+
+  .footer__column_centre {
+    width: 100%;
+    max-width: 477px;
+  }
+
+  .footer__column_right {
+    justify-self: start;
+  }
+
+  .footer__copyright {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer__form-input {
+    padding-left: 12px;
+  }
+
+  .footer__form-button {
+    padding: 0 10px;
+    font-size: 14px;
+  }
 }
