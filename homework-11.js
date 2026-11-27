@@ -31,6 +31,7 @@ modalForm.addEventListener('submit', (event) => {
 
   if (modalForm.checkValidity() === false) {
     alert('не соблюдены ограничения HTML');
+    modalForm.reportValidity();
     return;
   }
 
