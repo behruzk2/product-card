@@ -319,9 +319,10 @@ body {
 .modal__close-button{
   position: absolute;
   top: 0;
-  right: 8px;
+  right: 0px;
   cursor: pointer;
   font-size: 25px;
+  border-radius: 5px;
 }
 
 .modal__form{

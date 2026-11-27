@@ -1,7 +1,7 @@
 const emailInput = document.getElementById("footer-email");
 const emailForm = document.querySelector(".footer__form");
 const modalForm = document.getElementById('modal__form');
-const closeModalButton = document.getElementById("close-modal");
+const closeModalButton = document.getElementById("close-modal-button");
 const openModalButton = document.getElementById('open-modal');
 const modal = document.getElementById('modal');
 let user;
