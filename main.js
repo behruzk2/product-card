@@ -1,18 +1,22 @@
 // Пункт 2: Перекрашиваю только первую карточку
-const cardNum1 = document.querySelector(".product");
 const changeColorCardBut = document.querySelector("#changeFirstCard");
 const firstCardColor = "#be0d0d";
 
 changeColorCardBut.addEventListener("click", () => {
-  cardNum1.style.backgroundColor = firstCardColor;
+  const cardNum1 = document.querySelector(".product");
+
+  if (cardNum1) {
+    cardNum1.style.backgroundColor = firstCardColor;
+  }
 });
 
 // Пункт 3: Перекрашиваю все карточки
-const allCards = document.querySelectorAll(".product");
 const changeColorCardsBut = document.querySelector("#changeAllCards");
 const allCardsColor = "#0dc735";
 
 changeColorCardsBut.addEventListener("click", () => {
+  const allCards = document.querySelectorAll(".product");
+
   allCards.forEach((card) => {
     card.style.backgroundColor = allCardsColor;
   });

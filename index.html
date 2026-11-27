@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -10,8 +10,12 @@
 </head>
 
 <body>
+
+  
+
+
   <div class="products">
-    <h1 class="products__title">
+    <h1 class="products__title" id="store">
       Выбери свой продукт
     </h1>
 
@@ -20,6 +24,7 @@
     <button id="changeAllCards">поменять цвет карточек</button>
     <button id="openGoogle">Открыть гугл</button>
     <button id="showConsoleLog">Вывести в консоль</button>
+    <button id="open-modal">Регистрация</button>
 
     <div class="products__list" id="productCards__list"></div>
 
@@ -39,11 +44,90 @@
     </template>
   </div>
 
+  <footer class="footer" id="contacts">
+    <div class="footer__container">
+      <div class="footer__columns">
+        <div class="footer__column footer__column_left">
+          <h2 class="footer__title">Product Cards</h2><!-- /.footer__title -->
+          <p class="footer__text">У Нас Самые Лучшие Продукты Для Кожи!</p><!-- /.footer__text -->
+          <div class="footer__socials">
+            <a href="#" class="footer__social-link">
+              <img src="/images/telegram_icon.svg" alt="Telegram" width="21" height="18" class="footer__social-icon">
+            </a>
+            <a href="#" class="footer__social-link">
+              <img src="/images/vk_icon.svg" alt="VK" width="24" height="14" class="footer__social-icon">
+            </a>
+          </div>
+        </div><!-- /.footer__column footer__column_left -->
+        <div class="footer__column footer__column_centre">
+          <label for="footer-email" class="footer__form-title">Подпишись на наши
+            акции:</label><!-- /.footer__form-title -->
+          <form action="#" class="footer__form">
+            <input id="footer-email" type="email" name="email" autocomplete="email" required class="footer__form-input"
+              placeholder="Введи Email...">
+            <button type="submit" class="footer__form-button">
+              Подписаться</button>
+          </form><!-- /.footer__form -->
+        </div><!-- /.footer__column footer__column_centre -->
+        <div class="footer__column footer__column_right">
+          <p class="footer__links-title">
+            Быстрые ссылки
+          </p><!-- /.footer__links-title -->
+          <nav class="links">
+            <ul class="links__list">
+              <li class="links__item"><a href="#">Главная</a></li><!-- /.links__item -->
+              <li class="links__item"><a href="#store">Магазин</a></li><!-- /.links__item -->
+              <li class="links__item"><a href="#contacts">Контакты</a></li><!-- /.links__item -->
+            </ul><!-- /.links__list-->
+
+          </nav><!-- /.links -->
+        </div><!-- /.footer__column footer__column_right -->
+      </div><!-- /.footer__columns -->
+
+      <p class="footer__copyright">www.product-cards.com©all right reserve</p><!-- /.footer__copyright -->
+    </div><!-- /.footer__container -->
+
+  </footer><!-- /.footer -->
+
+
+<div id="modal" class="modal">
+  <div class="overlay"></div><!-- /.overlay -->
+  <div class="modal__content">
+    <button id="close-modal-button" type="button" class="modal__close-button">&times;</button><!-- /.modal__close-button -->
+    <form class="modal__form" id="modal__form" novalidate>
+
+       <label for="name-registration"> Имя пользователя:</label>
+       <input type="text" name="name" id="name-registration" placeholder="Введите имя" required>
+
+       <label for="surname-registration">Фамилия пользователя:</label> 
+       <input type="text" name="surname" id="surname-registration" placeholder="Введите фамилию" required>
+
+       <label for="birth-date-registration">Дата рождения:</label>
+       <input type="date" name="date" id="birth-date-registration" required>
+
+       <label for="login-registration">Логин:</label>
+       <input type="text" name="login" id="login-registration" placeholder="Введите логин" required>
+
+       <label for="password-registration">Пароль:</label>
+       <input type="password" name="password" id="password-registration" placeholder="Введите пароль" required>
+
+       <label for="repeat-password-registration">Повторный пароль:</label>
+       <input type="password" name="repeatPassword" id="repeat-password-registration" placeholder="Повторите пароль" required>
+
+       <button type="submit">Зарегистрироваться</button>
+    </form><!-- /.modal__form -->
+  </div><!-- /.modal__content -->
+</div><!-- /.modal -->
+
+
+
+
   <script src="main.js"></script>
   <script src="homework-7.js"></script>
   <script src="homework-8.js"></script>
   <script type="module" src="homework-9.js"></script>
   <script type="module" src="homework-10.js"></script>
+  <script src="homework-11.js"></script>
 </body>
 
 </html>
